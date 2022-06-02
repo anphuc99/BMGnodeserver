@@ -11,7 +11,7 @@ const up = async()=>{
     },true)
 }
 const down = async()=>{
-    
+    Schema.DropTable("dbhander")    
 }
 module.exports = {
     up: up,
