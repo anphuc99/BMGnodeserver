@@ -7,6 +7,7 @@ const up = async()=>{
         rank.name("subkey").type("VARCHAR",200)
         rank.name("datakey").type("VARCHAR",200)
         rank.name("value").type("Text")
+        rank.primary = ["game","subkey","datakey"]
         return rank
     },true)
 }

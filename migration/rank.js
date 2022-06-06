@@ -6,6 +6,7 @@ const up = async()=>{
         rank.name("setName").type("VARCHAR",200)
         rank.name("key").type("VARCHAR",200)
         rank.name("value").type("INT")
+        rank.primary = ["setName","key"]
         return rank
     },true)
 }
