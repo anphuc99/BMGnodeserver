@@ -49,7 +49,7 @@ app.post('/api/v1/game/rank', async (req, res) => {
     let Rank = new rank()
     Rank.key = key
     Rank.setName = setName
-    if (json.rank == 0) {
+    if (json.add == true) {
       Rank.value = (checkRank === undefined ? 0 : checkRank.value) + value
     }
     else {
