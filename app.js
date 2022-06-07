@@ -50,6 +50,8 @@ app.post('/api/v1/game/rank', async (req, res) => {
     Rank.key = key
     Rank.setName = setName
     if (json.add == true) {
+      console.log("lồn")
+      console.log(checkRank.value)
       Rank.value = (checkRank === undefined ? 0 : checkRank.value) + value
     }
     else {
